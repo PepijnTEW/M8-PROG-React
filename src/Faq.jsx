@@ -1,28 +1,26 @@
 import { FaqItem } from "./FaqItem.jsx";
 export function Question() {
   const QUESTIONS = [
-    "Wood",
-    "Diamonds",
-    "Crafting Table",
-    "Pickaxe",
-    "Sword",
-    "TNT",
-    "Enchanting Table",
-    "Iron",
-    "Bow",
-    "Enchanted Golden Apple",
+    "Wat is een component?",
+    "Waarom miauwen knoppen niet?",
+    "Hoe programmeer ik een boterham?",
+    "Wat doet useState precies?",
+    "Kan een array gevoelens hebben?",
+    "Waarom werkt mijn code niet?",
+    "Wat is het verschil tussen == en ===?",
+    "Hoeveel React developers heb je nodig om een lamp te vervangen?",
+    "Moet ik mijn code refactoren?",
   ];
   const ANSWERS = [
-    "Added in update: Classic 0.0.14a",
-    "Added in update: Indev 0.31",
-    "Added in update: Indev 0.31",
-    "Added in update: Indev 0.31",
-    "Added in update: Indev 0.31",
-    "Added in update: Classic 0.0.14a",
-    "Added in update: Beta 1.9",
-    "Added in update: Indev 0.31",
-    "Added in update: Indev 0.31",
-    "Added in update: 1.3.1",
+    "Een kleiner, opzichzelfstaand deel van een groter geheel. In React is een component een kleiner onderdeel van de gehele applicatie. Componenten kun je hergebruiken en makkelijk onderhouden of verdelen over developers.",
+    "Omdat knoppen zelden katten zijn. Tenzij je natuurlijk een hele rare interface hebt ontworpen.",
+    "Je begint met twee strings, voegt een beetje logica toe en voor je het weet heb je een sandwich die zichzelf eet bij een infinite loop.",
+    "Het maakt het mogelijk om in functionele componenten lokaal state bij te houden. Je roept useState aan met een beginwaarde en krijgt een getter en setter terug.",
+    "Alleen als je er een map overheen gooit met 'empathyFunction'.",
+    "Waarschijnlijk door een typfout, een ontbrekende dependency, een race condition, of omdat het maandag is",
+    "`==` vergelijkt waarden met typeconversie. `===` vergelijkt zowel type als waarde. Gebruik altijd `===`, tenzij je met opzet rare bugs wil.",
+    "Geen. Ze declareren gewoon een nieuwe lamp met een andere state.",
+    "Als je deze vraag stelt: ja.",
   ];
   return (
     <section

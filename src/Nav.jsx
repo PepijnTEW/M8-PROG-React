@@ -17,7 +17,7 @@ export function Navigation() {
         href="#contact"
         className="bg-[#415A77] border-[#5E8FA8] hover:border-[#6da2bd] border-2 rounded-lg p-2 px-8 text-lg cursor-pointer"
       >
-        Contact
+        Faq
       </a>
     </nav>
   );
