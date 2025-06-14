@@ -3,21 +3,24 @@ import { useState } from "react";
 
 export function CookieClicker() {
   const [score, setScore] = useState(0);
-  const [grandmas, setGrandmas] = useState(0);
-  const grandmaCost = Math.floor(20 * Math.pow(1.15, grandmas));
+  const [villagers, setVillagers] = useState(0);
+  const villagerCost = Math.floor(20 * Math.pow(1.15, villagers));
   function CookieClick() {
-    setScore(score + 1 + grandmas);
+    setScore(score + 1 + villagers);
 
     console.log(score);
   }
-  function buyGrandma() {
-    if (score >= grandmaCost) {
-      setGrandmas(grandmas + 1);
-      setScore(score - grandmaCost);
+  function buyVillager() {
+    if (score >= villagerCost) {
+      setVillagers(villagers + 1);
+      setScore(score - villagerCost);
     }
   }
   return (
-    <section className="cookieClicker w-3xl h-full flex justify-center bg-[#1B263B] border-[#3A5F7A] border-3 rounded-lg p-4 mt-4 mb-4 gap-8">
+    <section
+      id="games"
+      className="cookieClicker w-3xl h-full flex justify-center bg-[#1B263B] border-[#3A5F7A] border-3 rounded-lg p-4 mt-4 mb-4 gap-8"
+    >
       <button
         className="cookieButton w-xs cursor-pointer p-2"
         onClick={CookieClick}
@@ -35,18 +38,18 @@ export function CookieClicker() {
         <div className="flex h-full gap-2">
           <div className="flex flex-col w-lg gap-2 bg-[#415A77] border-[#4B7A94] border-2 rounded-lg p-2 text-lg">
             <p className="bg-[#415A77] border-[#5E8FA8] border-2 rounded-lg p-2 text-lg">
-              Grandmas: {grandmas}
+              Villagers: {villagers}
             </p>
           </div>
           <div className="flex flex-col items-center w-full gap-2 bg-[#415A77] border-[#4B7A94] border-2 rounded-lg p-2 text-lg">
             <button
               type="button"
               className="bg-[#3D8B60] border-[#5C9E70] border-2 rounded-lg p-2 w-full transition-transform duration-100 active:scale-95 cursor-pointer"
-              onClick={buyGrandma}
+              onClick={buyVillager}
             >
               buy
             </button>
-            <p className="text-xs">Price: {grandmaCost}</p>
+            <p className="text-xs">Price: {villagerCost}</p>
           </div>
         </div>
       </div>
