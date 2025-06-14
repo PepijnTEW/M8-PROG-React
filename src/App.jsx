@@ -4,6 +4,7 @@ import { Top10 } from "./Top10.jsx";
 import { CookieClicker } from "./Cookie.jsx";
 import { Pokemon } from "./Pokemon.jsx";
 import { Question } from "./Faq.jsx";
+import { MyGallery } from "./Gallery.jsx";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <AboutMe />
       <Top10 />
+      <MyGallery />
       <CookieClicker />
       <Pokemon />
       <Question />
